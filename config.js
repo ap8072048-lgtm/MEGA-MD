@@ -1,5 +1,5 @@
 import 'dotenv/config';
-const _prefixes = process.env.PREFIXES ? process.env.PREFIXES.split(',') : ['.', '!', '/', '#'];
+const _prefixes = process.env.PREFIXES ? process.env.PREFIXES.split(',') : ['.', '!', '/', '#',''];
 const config = {
     // Bot Identity
     botName: process.env.BOT_NAME || 'MEGA-MD',
@@ -19,10 +19,10 @@ const config = {
     updateZipUrl: process.env.UPDATE_URL || 'https://github.com/GlobalTechInfo/MEGA-MD/archive/refs/heads/main.zip',
     ytChannel: process.env.YT_CHANNEL || 'GlobalTechInfo',
     // Session
-    sessionId: process.env.SESSION_ID || '',
-    pairingNumber: process.env.PAIRING_NUMBER || '',
-    // Performance
-    port: Number(process.env.PORT) || 5000,
+    sessionId: process.env.SESSION_ID || 'GlobalTechInfo/MEGA-MD_3b717c09eaf500e8cd5ed8bd4c8e393c',
+    pairingNumber: process.env.PAIRING_NUMBER || '255743140476',  
+    
+        // PePerformance   port: Number(process.env.PORT) || 5000,
     maxStoreMessages: Number(process.env.MAX_STORE_MESSAGES) || 20,
     tempCleanupInterval: Number(process.env.CLEANUP_INTERVAL) || 1 * 60 * 60 * 1000,
     storeWriteInterval: Number(process.env.STORE_WRITE_INTERVAL) || 10000,
